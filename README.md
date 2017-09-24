@@ -10,3 +10,10 @@ Checks a list of URLs to determine their HTTPS certificate expiry
 ``` 
 python ssl_expiry.py
 ```
+
+## Example Output
+```
+OK: Certificate for www.google.com is not anytime expiring soon (73 days)
+OK: Certificate for www.example.com is not anytime expiring soon (429 days)
+WARNING: Could not connect to www.non-existant.com: [Errno 11001] getaddrinfo failed
+```
