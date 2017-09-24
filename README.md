@@ -7,4 +7,6 @@ Checks a list of URLs to determine their HTTPS certificate expiry
 3. Modify hosts.txt to include your hosts
 4. Run the script via Python
 
-    python ssl_expiry.py
+``` 
+python ssl_expiry.py
+```
