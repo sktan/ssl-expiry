@@ -44,6 +44,13 @@ def check_ssl_expiry(hostname, port=443, warning_buffer=30, critical_buffer=7):
 
 with open("hosts.txt") as file:
     for line in file:
+        # Skip lines that start with #
+        # These are comments
+        if line.strip().startswith("#"):
+            continue
+        # Skip empty lines
+        if line.strip() is "":
+            continue
         line = line.replace("\n", "")
         port = 443
         # Determine if a port exist:
