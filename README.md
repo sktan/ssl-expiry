@@ -11,6 +11,18 @@ Checks a list of URLs to determine their HTTPS certificate expiry
 python ssl_expiry.py
 ```
 
+## Example hosts.txt
+```
+# Google
+www.google.com
+
+# Example
+www.example.com
+
+# Non Existant
+www.non-existant.com:1234
+```
+
 ## Example Output
 ```
 OK: Certificate for www.google.com is not anytime expiring soon (73 days)
